@@ -4093,7 +4093,7 @@ pre {
 .table thead th {
   border-top: 1px solid #ebf2f7;
   border-bottom: 1px solid #ebf2f7;
-  color: #8392a5; }
+  color: #eee; }
 
 .table-hover tbody tr:hover {
   background: #F5F6FA; }
