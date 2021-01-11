@@ -306,6 +306,7 @@ _:future,
   margin-top: 60px; }
 
 .page-footer {
+  margin-top: 14vh;
   background: #F9F9FC;
   border: 1px solid rgba(70, 95, 145, 0.2);
   border-left: none; }
