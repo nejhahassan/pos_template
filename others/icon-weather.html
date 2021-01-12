@@ -10,28 +10,13 @@
       <meta name="keyword" content="">
       <meta name="author"  content=""/>
       <!-- Page Title -->
-      <title>Setting | Shop Settings</title>
+      <title>Weather Icons | Avesta - Multipurpose Admin Dashboard Template</title>
+      <!-- Weather CSS -->	 
+      <link type="text/css" rel="stylesheet" href="assets/plugins/weather-icons/css/weather-icons.min.css">
       <!-- Main CSS -->	  
       <link type="text/css" rel="stylesheet" href="assets/css/style.css"/>
       <!-- Favicon -->	
       <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
-            <!-- header scripts -->
-      <!--================================-->
-      <script src="assets/plugins/jquery/jquery.min.js"></script>
-      <script src="assets/plugins/jquery-ui/jquery-ui.js"></script>
-      <script src="assets/plugins/popper/popper.js"></script>
-      <script src="assets/plugins/feather/feather.min.js"></script>
-      <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-      <script src="assets/plugins/typeahead/typeahead.js"></script>
-      <script src="assets/plugins/typeahead/typeahead-active.js"></script>
-      <script src="assets/plugins/pace/pace.min.js"></script>
-      <script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-      <script src="assets/plugins/highlight/highlight.min.js"></script>
-      <!-- Required Script -->
-      <script src="assets/js/app.js"></script>
-      <script src="assets/js/avesta.js"></script>
-      <script src="assets/js/avesta-customizer.js"></script>
-
       <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
       <!-- WARNING: Respond.js doesn"t work if you view the page via file:// -->
       <!--[if lt IE 9]>
@@ -66,7 +51,6 @@
                         <a href="#"><i data-feather="home"></i>
                         <span>Dashboard</span><i class="accordion-icon fa fa-angle-left"></i></a>
                         <ul class="sub-menu">
-                           <li><a href="branch.html">Branch</a></li>
                            <li><a href="index.html">Sales</a></li>
                            <li><a href="index2.html">Analytics</a></li>
                            <li><a href="index3.html">Cryptocurrency</a></li>
@@ -74,12 +58,11 @@
                            <li><a href="index5.html">Project</a></li>
                         </ul>
                      </li>
-                     <li class="open active">
+                     <li>
                         <a href="#"><i data-feather="mail"></i>
                         <span>Mailbox</span><i class="accordion-icon fa fa-angle-left"></i></a>
-                        <ul class="sub-menu" style="display: block;">
-                           <!-- Active Page -->
-                           <li class="active"><a href="mailbox.html">Inbox</a></li>
+                        <ul class="sub-menu">
+                           <li><a href="mailbox.html">Inbox</a></li>
                            <li><a href="mailbox-message.html">View Mail</a></li>
                            <li><a href="mailbox-compose.html">Compose Mail</a></li>
                         </ul>
@@ -159,17 +142,18 @@
                            <li><a href="grid-customizing-grid.html">Customizing Grid</a></li>
                         </ul>
                      </li>
-                     <li>
+                     <li class="open active">
                         <a href="#"><i data-feather="gift"></i>
                         <span>Icons</span><i class="accordion-icon fa fa-angle-left"></i></a>
-                        <ul class="sub-menu">
+                        <ul class="sub-menu" style="display: block;">
                            <li><a href="icon-font-awesome.html">Font Awesome</a></li>
                            <li><a href="icon-feather.html">Feather Icons</a></li>
                            <li><a href="icon-mdi.html">Mdi icons</a></li>
                            <li><a href="icon-flag.html">Flag icons</a></li>
                            <li><a href="icon-simple-line.html">Simple line icons</a></li>
                            <li><a href="icon-themify.html">Themify icons</a></li>
-                           <li><a href="icon-weather.html">Weather Icons</a></li>
+                           <!-- Active Page -->
+                           <li class="active"><a href="icon-weather.html">Weather Icons</a></li>
                         </ul>
                      </li>
                      <li>
@@ -335,8 +319,8 @@
             <div class="sidebar-footer">									
                <a class="pull-left" href="pages-profile.html" data-toggle="tooltip" data-placement="top" data-original-title="Profile">
                <i data-feather="user" class="wd-16"></i></a>									
-               <a class="pull-left " href="Setting_shop.html" data-toggle="tooltip" data-placement="top" data-original-title="Settings">
-               <i class="fa fa-gear"></i></a>
+               <a class="pull-left " href="mailbox.html" data-toggle="tooltip" data-placement="top" data-original-title="Mailbox">
+               <i data-feather="mail" class="wd-16"></i></a>
                <a class="pull-left" href="aut-unlock.html" data-toggle="tooltip" data-placement="top" data-original-title="Lockscreen">
                <i data-feather="lock" class="wd-16"></i></a>
                <a class="pull-left" href="aut-signin.html" data-toggle="tooltip" data-placement="top" data-original-title="Sing Out">
@@ -689,137 +673,413 @@
             <!--================================-->
             <!-- Page Inner Start -->
             <!--================================-->
-            <div class="page-inner pd-0-force mg-0-force ht-100vh bg-white">
-               <div class="row no-gutters wd-100p clearfix">
+            <div class="page-inner">
+               <!-- Wrapper -->
+               <div class="wrapper">
                   <!--================================-->
-                  <!-- Start Left sidebar -->
+                  <!-- Breadcrumb Start -->
                   <!--================================-->
-                  <div class="col-lg-3 email-left-sidebar hidden-sm hidden-xs">
-                     <div class="card bd-r-0-force bd-t-0-force bd-b-0-force">
-                        <div class="card-body pd-x-30">
-                           <!-- Left sidebar data will goes here -->
-                        <ul class="nav flex-column">
-                          <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Shop Setting</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Shop Positions</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Shop users</a>
-                          </li>
-                          <!-- <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
-                          </li> -->
-                        </ul>
-                        </div>
-                     </div>
-                  </div>
-                  <!--/ End Left sidebar -->
-                  <!--================================-->				  
-                  <!-- Start Right Sidebar -->
-                  <!--================================-->
-                  <div class="col-lg-9 email-right-sidebar">
-                     <div class="card bd-r-0-force bd-t-0-force bd-b-0-force">
-                        <div class="card-body pd-0">
-                           <!-- All Right side bar data will goes here -->
-                           <div class="form-layout form-layout-1">
-                                 <div class="row mg-b-25 mt-4 container">
-                                    <div class="col-lg-9">
-                                       <div class="form-group mg-b-10-force">
-                                          <label class="form-control-label">Shop Id: <span class="tx-danger">*</span></label>
-                                          <select class="form-control select2 select2-hidden-accessible" data-placeholder="Choose country" tabindex="-1" aria-hidden="true">
-                                             <option label="Choose shop"></option>
-                                             <option value="Kababjees">Kababjees</option>
-                                             <option value="UB">United Bakery</option>
-                                             <option value="Delizia">Delizia</option>
-                                             <option value="Village">Village </option>
-                                          </select>
-                                       </div>
-                                    </div>
-                                    <div class="col-lg-4">
-                                       <div class="form-group">
-                                          <label class="form-control-label active">Branch name: <span class="tx-danger">*</span></label>
-                                          <input class="form-control" type="text" name="Branchname" placeholder="Enter branch name">
-                                       </div>
-                                    </div>
-                                    <!-- col-4 -->
-                                    <div class="col-lg-4">
-                                       <div class="form-group">
-                                          <label class="form-control-label active">Contact: <span class="tx-danger">*</span></label>
-                                           <input type="text" class="form-control" id="phone-input-2">
-                                       </div>
-                                    </div>
-                                    <!-- col-4 -->
-                                    <div class="col-lg-4">
-                                       <div class="form-group">
-                                          <label class="form-control-label active">Email address: <span class="tx-danger">*</span></label>
-                                          <input class="form-control" type="text" name="email"  placeholder="Enter email address">
-                                       </div>
-                                    </div>
-                                    <!-- col-4 -->
-                                    <div class="col-lg-4">
-                                       <div class="form-group mg-b-10-force">
-                                          <label class="form-control-label active">Address: <span class="tx-danger">*</span></label>
-                                          <input class="form-control" type="text" name="address" placeholder="Enter address">
-                                       </div>
-                                    </div>
-                                    <!-- col-4 -->                                    
-                                    <div class="col-lg-4">
-                                       <div class="form-group mg-b-10-force">
-                                          <label class="form-control-label">City: <span class="tx-danger">*</span></label>
-                                          <select class="form-control select2 select2-hidden-accessible" data-placeholder="Choose City" tabindex="-1" aria-hidden="true">
-                                             <option label="Choose City"></option>
-                                             <option value="Karachi">Karachi</option>
-                                             <option value="Lahore">Lahore</option>
-                                             <option value="Islamabad">Islamabad</option>
-                                             <option value="Faislabad">Faislabad</option>
-                                          </select>
-                                       </div>
-                                    </div>
-                                    <!-- col-4 -->
-                                    <div class="col-lg-4">
-                                       <div class="form-group mg-b-10-force">
-                                          <label class="form-control-label">Country: <span class="tx-danger">*</span></label>
-                                          <select class="form-control select2 select2-hidden-accessible" data-placeholder="Choose country" tabindex="-1" aria-hidden="true">
-                                             <option label="Choose country"></option>
-                                             <option value="USA">United States of America</option>
-                                             <option value="UK">United Kingdom</option>
-                                             <option value="China">China</option>
-                                             <option value="Japan">Japan</option>
-                                          </select>
-                                       </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                    <label class="form-control-label">Status: <span class="tx-danger">*</span></label>
-                                    </div>
-                                    <!-- col-4 -->
-                                    <div class="col-lg-2">
-
-                                       <div class="custom-control custom-radio">
-                                       <input type="radio" class="custom-control-input" id="statusOn" name="status" required>
-                                       <label class="custom-control-label" for="statusOn">On</label>
-                                       </div>
-                                       <div class="custom-control custom-radio mb-3">
-                                          <input type="radio" class="custom-control-input" id="statusOff" name="status" required>
-                                          <label class="custom-control-label" for="statusOff">Off</label>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <!-- row -->
-                                 <div class="form-layout-footer container">
-                                    <button class="btn btn-primary">Submit Form</button>
-                                    <button class="btn btn-secondary">Cancel</button>
-                                 </div>
-                                 <!-- form-layout-footer -->
-                              </div>
+                  <div class="pageheader pd-t-25 pd-b-35">
+                     <div class="d-flex justify-content-between">
+                        <div class="clearfix">
+                           <div class="pd-t-5 pd-b-5">
+                              <h1 class="pd-0 mg-0 tx-20 tx-dark">Weather Icons</h1>
+                           </div>
+                           <div class="breadcrumb pd-0 mg-0">
+                              <a class="breadcrumb-item" href="index.html"><i class="icon ion-ios-home-outline"></i> Home</a>
+                              <a class="breadcrumb-item" href="#">Icons</a>
+                              <span class="breadcrumb-item active">Weather Icons</span>
                            </div>
                         </div>
                      </div>
                   </div>
-                  <div>
-                  <!--/ End email-rightbar -->
+                  <!--/ Breadcrumb End -->
+                  <!--================================-->
+                  <!-- Weather Icons Start -->
+                  <!--================================-->
+                  <div class="row clearfix">
+                     <div class="col-12">
+                        <!--================================-->
+                        <!-- New Icons Start -->
+                        <!--================================-->					 
+                        <div class="card mg-b-30">
+                           <div class="card-header">
+                              <div class="d-flex justify-content-between align-items-center">
+                                 <div>
+                                    <h6 class="card-header-title tx-13 mb-0"> New Icons</h6>
+                                 </div>
+                                 <div class="text-right">
+                                    <div class="d-flex">
+                                       <a href="#" class="mr-3"><i class="ti-reload"></i></a>
+                                       <div class="dropdown" data-toggle="dropdown">
+                                          <a href="#"><i class="ti-more-alt"></i></a>
+                                          <div class="dropdown-menu dropdown-menu-right">
+											  <a href="#" class="dropdown-item"><i data-feather="info" class="wd-16 mr-2"></i>View Details</a>
+											  <a href="#" class="dropdown-item"><i data-feather="share" class="wd-16 mr-2"></i>Share</a>
+											  <a href="#" class="dropdown-item"><i data-feather="download" class="wd-16 mr-2"></i>Download</a>
+											  <a href="#" class="dropdown-item"><i data-feather="copy" class="wd-16 mr-2"></i>Copy to</a>
+											  <a href="#" class="dropdown-item"><i data-feather="folder" class="wd-16 mr-2"></i>Move to</a>
+											  <a href="#" class="dropdown-item"><i data-feather="edit" class="wd-16 mr-2"></i>Rename</a>
+											  <a href="#" class="dropdown-item"><i data-feather="trash" class="wd-16 mr-2"></i>Delete</a>
+										  </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card-body collapse show" id="newIcons">
+                              <div class="row no-gutters icons-list">
+                                 <div class="col-6 col-md-3"><i class="wi wi-day-cloudy-high"></i>day-cloudy-high</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-day-light-wind"></i>day-light-wind</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-day-sleet"></i>day-sleet</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-day-haze"></i>day-haze</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-cloudy-high"></i>night-cloud-high</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-alt-partly-cloudy"></i>night-alt-partly-cloudy</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-sleet"></i>sleet</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-moonrise"></i>moonrise</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-moonset"></i>moonset</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-sleet"></i>night-sleet</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-alt-sleet"></i>night-alt-sleet</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-raindrop"></i>raindrop</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-barometer"></i>barometer</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-humidity"></i>humidity</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-na"></i>na (no report)</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-flood"></i>flood</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-sandstorm"></i>sandstorm</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-tsunami"></i>tsunami</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-earthquake"></i>earthquake</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-fire"></i>fire</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-volcano"></i>volcano</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-train"></i>train</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-small-craft-advisory"></i>small-craft-advisory</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-gale-warning"></i>gale-warning</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-storm-warning"></i>storm-warning</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-hurricane-warning"></i>hurricane-warning</div>
+                              </div>
+                           </div>
+                        </div>
+                        <!--/ New Icons End -->
+                        <!--================================-->
+                        <!-- Daytime Icons Start -->
+                        <!--================================-->					 
+                        <div class="card mg-b-30">
+                           <div class="card-header">
+                              <div class="d-flex justify-content-between align-items-center">
+                                 <div>
+                                    <h6 class="card-header-title tx-13 mb-0">Daytime Icons</h6>
+                                 </div>
+                                 <div class="text-right">
+                                    <div class="d-flex">
+                                       <a href="#" class="mr-3"><i class="ti-reload"></i></a>
+                                       <div class="dropdown" data-toggle="dropdown">
+                                          <a href="#"><i class="ti-more-alt"></i></a>
+                                          <div class="dropdown-menu dropdown-menu-right">
+											  <a href="#" class="dropdown-item"><i data-feather="info" class="wd-16 mr-2"></i>View Details</a>
+											  <a href="#" class="dropdown-item"><i data-feather="share" class="wd-16 mr-2"></i>Share</a>
+											  <a href="#" class="dropdown-item"><i data-feather="download" class="wd-16 mr-2"></i>Download</a>
+											  <a href="#" class="dropdown-item"><i data-feather="copy" class="wd-16 mr-2"></i>Copy to</a>
+											  <a href="#" class="dropdown-item"><i data-feather="folder" class="wd-16 mr-2"></i>Move to</a>
+											  <a href="#" class="dropdown-item"><i data-feather="edit" class="wd-16 mr-2"></i>Rename</a>
+											  <a href="#" class="dropdown-item"><i data-feather="trash" class="wd-16 mr-2"></i>Delete</a>
+										  </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card-body collapse show" id="daytimeIcons">
+                              <div class="row no-gutters icons-list">
+                                 <div class="col-6 col-md-3"><i class="wi wi-day-sunny"></i>wi-day-sunny</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-day-cloudy"></i>wi-day-cloudy</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-day-cloudy-gusts"></i>wi-day-cloudy-gusts</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-day-cloudy-windy"></i>wi-day-cloudy-windy</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-day-fog"></i>wi-day-fog</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-day-hail"></i>wi-day-hail</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-day-haze"></i>wi-day-haze</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-day-lightning"></i>wi-day-lightning</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-day-rain"></i>wi-day-rain</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-day-rain-mix"></i>wi-day-rain-mix</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-day-rain-wind"></i>wi-day-rain-wind</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-day-showers"></i>wi-day-showers</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-day-sleet"></i>wi-day-sleet</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-day-sleet-storm"></i>wi-day-sleet-storm</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-day-snow"></i>wi-day-snow</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-day-snow-thunderstorm"></i>wi-day-snow-thunderstorm</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-day-snow-wind"></i>wi-day-snow-wind</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-day-sprinkle"></i>wi-day-sprinkle</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-day-storm-showers"></i>wi-day-storm-showers</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-day-sunny-overcast"></i>wi-day-sunny-overcast</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-day-thunderstorm"></i>wi-day-thunderstorm</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-day-windy"></i>wi-day-windy</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-solar-eclipse"></i>wi-solar-eclipse</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-hot"></i>wi-hot</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-day-cloudy-high"></i>wi-day-cloudy-high</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-day-light-wind"></i>wi-day-light-wind</div>
+                              </div>
+                           </div>
+                        </div>
+                        <!--/ Daytime Icons End -->
+                        <!--================================-->
+                        <!-- Nighttime Icons Start -->
+                        <!--================================-->					 
+                        <div class="card mg-b-30">
+                           <div class="card-header">
+                              <div class="d-flex justify-content-between align-items-center">
+                                 <div>
+                                    <h6 class="card-header-title tx-13 mb-0">Nighttime Icons</h6>
+                                 </div>
+                                 <div class="text-right">
+                                    <div class="d-flex">
+                                       <a href="#" class="mr-3"><i class="ti-reload"></i></a>
+                                       <div class="dropdown" data-toggle="dropdown">
+                                          <a href="#"><i class="ti-more-alt"></i></a>
+                                          <div class="dropdown-menu dropdown-menu-right">
+											  <a href="#" class="dropdown-item"><i data-feather="info" class="wd-16 mr-2"></i>View Details</a>
+											  <a href="#" class="dropdown-item"><i data-feather="share" class="wd-16 mr-2"></i>Share</a>
+											  <a href="#" class="dropdown-item"><i data-feather="download" class="wd-16 mr-2"></i>Download</a>
+											  <a href="#" class="dropdown-item"><i data-feather="copy" class="wd-16 mr-2"></i>Copy to</a>
+											  <a href="#" class="dropdown-item"><i data-feather="folder" class="wd-16 mr-2"></i>Move to</a>
+											  <a href="#" class="dropdown-item"><i data-feather="edit" class="wd-16 mr-2"></i>Rename</a>
+											  <a href="#" class="dropdown-item"><i data-feather="trash" class="wd-16 mr-2"></i>Delete</a>
+										  </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card-body collapse show" id="vighttimeIcons">
+                              <div class="row no-gutters icons-list">
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-clear"></i>wi-night-clear</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-alt-cloudy"></i>wi-night-alt-cloudy</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-alt-cloudy-gusts"></i>wi-night-alt-cloudy-gusts</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-alt-cloudy-windy"></i>wi-night-alt-cloudy-windy</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-alt-hail"></i>wi-night-alt-hail</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-alt-lightning"></i>wi-night-alt-lightning</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-alt-rain"></i>wi-night-alt-rain</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-alt-rain-mix"></i>wi-night-alt-rain-mix</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-alt-rain-wind"></i>wi-night-alt-rain-wind</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-alt-showers"></i>wi-night-alt-showers</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-alt-sleet"></i>wi-night-alt-sleet</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-alt-sleet-storm"></i>wi-night-alt-sleet-storm</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-alt-snow"></i>wi-night-alt-snow</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-alt-snow-thunderstorm"></i>wi-night-alt-snow-thunderstorm</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-alt-snow-wind"></i>wi-night-alt-snow-wind</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-alt-sprinkle"></i>wi-night-alt-sprinkle</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-alt-storm-showers"></i>wi-night-alt-storm-showers</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-alt-thunderstorm"></i>wi-night-alt-thunderstorm</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-cloudy"></i>wi-night-cloudy</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-cloudy-gusts"></i>wi-night-cloudy-gusts</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-cloudy-windy"></i>wi-night-cloudy-windy</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-fog"></i>wi-night-fog</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-hail"></i>wi-night-hail</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-lightning"></i>wi-night-lightning</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-partly-cloudy"></i>wi-night-partly-cloudy</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-rain"></i>wi-night-rain</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-rain-mix"></i>wi-night-rain-mix</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-rain-wind"></i>wi-night-rain-wind</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-showers"></i>wi-night-showers</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-sleet"></i>wi-night-sleet</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-sleet-storm"></i>wi-night-sleet-storm</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-snow"></i>wi-night-snow</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-snow-thunderstorm"></i>wi-night-snow-thunderstorm</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-snow-wind"></i>wi-night-snow-wind</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-sprinkle"></i>wi-night-sprinkle</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-storm-showers"></i>wi-night-storm-showers</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-thunderstorm"></i>wi-night-thunderstorm</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-lunar-eclipse"></i>wi-lunar-eclipse</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-stars"></i>wi-stars</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-storm-showers"></i>wi-storm-showers</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-thunderstorm"></i>wi-thunderstorm</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-alt-cloudy-high"></i>wi-night-alt-cloudy-high</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-cloudy-high"></i>wi-night-cloudy-high</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-night-alt-partly-cloudy"></i>wi-night-alt-partly-cloudy</div>
+                              </div>
+                           </div>
+                        </div>
+                        <!--/ Nighttime Icons End -->
+                        <!--================================-->
+                        <!-- Neutral Icons Start -->
+                        <!--================================-->					 
+                        <div class="card mg-b-30">
+                           <div class="card-header">
+                              <div class="d-flex justify-content-between align-items-center">
+                                 <div>
+                                    <h6 class="card-header-title tx-13 mb-0">Neutral Icons</h6>
+                                 </div>
+                                 <div class="text-right">
+                                    <div class="d-flex">
+                                       <a href="#" class="mr-3"><i class="ti-reload"></i></a>
+                                       <div class="dropdown" data-toggle="dropdown">
+                                          <a href="#"><i class="ti-more-alt"></i></a>
+                                          <div class="dropdown-menu dropdown-menu-right">
+											  <a href="#" class="dropdown-item"><i data-feather="info" class="wd-16 mr-2"></i>View Details</a>
+											  <a href="#" class="dropdown-item"><i data-feather="share" class="wd-16 mr-2"></i>Share</a>
+											  <a href="#" class="dropdown-item"><i data-feather="download" class="wd-16 mr-2"></i>Download</a>
+											  <a href="#" class="dropdown-item"><i data-feather="copy" class="wd-16 mr-2"></i>Copy to</a>
+											  <a href="#" class="dropdown-item"><i data-feather="folder" class="wd-16 mr-2"></i>Move to</a>
+											  <a href="#" class="dropdown-item"><i data-feather="edit" class="wd-16 mr-2"></i>Rename</a>
+											  <a href="#" class="dropdown-item"><i data-feather="trash" class="wd-16 mr-2"></i>Delete</a>
+										  </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card-body collapse show" id="neutralIcons">
+                              <div class="row no-gutters icons-list">
+                                 <div class="col-6 col-md-3"><i class="wi wi-cloud"></i>wi-cloud</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-cloudy"></i>wi-cloudy</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-cloudy-gusts"></i>wi-cloudy-gusts</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-cloudy-windy"></i>wi-cloudy-windy</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-fog"></i>wi-fog</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-hail"></i>wi-hail</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-rain-wind"></i>wi-rain-wind</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-rain"></i>wi-rain</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-rain-mix"></i>wi-rain-mix</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-showers"></i>wi-showers</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-sleet"></i>wi-sleet</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-snow"></i>wi-snow</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-sprinkle"></i>wi-sprinkle</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-storm-showers"></i>wi-storm-showers</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-thunderstorm"></i>wi-thunderstorm</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-snow-wind"></i>wi-snow-wind</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-snow"></i>wi-snow</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-smog"></i>wi-smog</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-smoke"></i>wi-smoke</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-lightning"></i>wi-lightning</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-raindrops"></i>wi-raindrops</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-raindrop"></i>wi-raindrop</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-dust"></i>wi-dust</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-snowflake-cold"></i>wi-snowflake-cold</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-windy"></i>wi-windy</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-strong-wind"></i>wi-strong-wind</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-sandstorm"></i>wi-sandstorm</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-earthquake"></i>wi-earthquake</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-fire"></i>wi-fire</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-flood"></i>wi-flood</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-meteor"></i>wi-meteor</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-tsunami"></i>wi-tsunami</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-volcano"></i>wi-volcano</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-hurricane"></i>wi-hurricane</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-tornado"></i>wi-tornado</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-small-craft-advisory"></i>wi-small-craft-advisory</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-gale-warning"></i>wi-gale-warning</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-storm-warning"></i>wi-storm-warning</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-hurricane-warning"></i>wi-hurricane-warning</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-wind-direction"></i>wi-wind-direction</div>
+                              </div>
+                           </div>
+                        </div>
+                        <!--/ Neutral Icons End -->
+                        <!--================================-->
+                        <!-- Miscellaneous Icons Start -->
+                        <!--================================-->					 
+                        <div class="card mg-b-30">
+                           <div class="card-header">
+                              <div class="d-flex justify-content-between align-items-center">
+                                 <div>
+                                    <h6 class="card-header-title tx-13 mb-0">Miscellaneous Icons</h6>
+                                 </div>
+                                 <div class="text-right">
+                                    <div class="d-flex">
+                                       <a href="#" class="mr-3"><i class="ti-reload"></i></a>
+                                       <div class="dropdown" data-toggle="dropdown">
+                                          <a href="#"><i class="ti-more-alt"></i></a>
+                                          <div class="dropdown-menu dropdown-menu-right">
+											  <a href="#" class="dropdown-item"><i data-feather="info" class="wd-16 mr-2"></i>View Details</a>
+											  <a href="#" class="dropdown-item"><i data-feather="share" class="wd-16 mr-2"></i>Share</a>
+											  <a href="#" class="dropdown-item"><i data-feather="download" class="wd-16 mr-2"></i>Download</a>
+											  <a href="#" class="dropdown-item"><i data-feather="copy" class="wd-16 mr-2"></i>Copy to</a>
+											  <a href="#" class="dropdown-item"><i data-feather="folder" class="wd-16 mr-2"></i>Move to</a>
+											  <a href="#" class="dropdown-item"><i data-feather="edit" class="wd-16 mr-2"></i>Rename</a>
+											  <a href="#" class="dropdown-item"><i data-feather="trash" class="wd-16 mr-2"></i>Delete</a>
+										  </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card-body collapse show" id="miscellaneousIcons">
+                              <div class="row no-gutters icons-list">
+                                 <div class="col-6 col-md-3"><i class="wi wi-alien"></i>wi-alien</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-celsius"></i>wi-celsius</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-fahrenheit"></i>wi-fahrenheit</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-degrees"></i>wi-degrees</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-thermometer"></i>wi-thermometer</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-thermometer-exterior"></i>wi-thermometer-exterior</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-thermometer-internal"></i>wi-thermometer-internal</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-cloud-down"></i>wi-cloud-down</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-cloud-up"></i>wi-cloud-up</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-cloud-refresh"></i>wi-cloud-refresh</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-horizon"></i>wi-horizon</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-horizon-alt"></i>wi-horizon-alt</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-sunrise"></i>wi-sunrise</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-sunset"></i>wi-sunset</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-moonrise"></i>wi-moonrise</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-moonset"></i>wi-moonset</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-refresh"></i>wi-refresh</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-refresh-alt"></i>wi-refresh-alt</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-umbrella"></i>wi-umbrella</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-barometer"></i>wi-barometer</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-humidity"></i>wi-humidity</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-na"></i>wi-na</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-train"></i>wi-train</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-moon-waxing-crescent-6"></i>wi-moon-waxing-crescent-6</div>
+                              </div>
+                           </div>
+                        </div>
+                        <!--/ Miscellaneous Icons End -->
+                        <!--================================-->
+                        <!-- Beaufort Wind Scale Icons Start -->
+                        <!--================================-->					 
+                        <div class="card mg-b-30">
+                           <div class="card-header">
+                              <div class="d-flex justify-content-between align-items-center">
+                                 <div>
+                                    <h6 class="card-header-title tx-13 mb-0">Beaufort Wind Scale Icons</h6>
+                                 </div>
+                                 <div class="text-right">
+                                    <div class="d-flex">
+                                       <a href="#" class="mr-3"><i class="ti-reload"></i></a>
+                                       <div class="dropdown" data-toggle="dropdown">
+                                          <a href="#"><i class="ti-more-alt"></i></a>
+                                          <div class="dropdown-menu dropdown-menu-right">
+											  <a href="#" class="dropdown-item"><i data-feather="info" class="wd-16 mr-2"></i>View Details</a>
+											  <a href="#" class="dropdown-item"><i data-feather="share" class="wd-16 mr-2"></i>Share</a>
+											  <a href="#" class="dropdown-item"><i data-feather="download" class="wd-16 mr-2"></i>Download</a>
+											  <a href="#" class="dropdown-item"><i data-feather="copy" class="wd-16 mr-2"></i>Copy to</a>
+											  <a href="#" class="dropdown-item"><i data-feather="folder" class="wd-16 mr-2"></i>Move to</a>
+											  <a href="#" class="dropdown-item"><i data-feather="edit" class="wd-16 mr-2"></i>Rename</a>
+											  <a href="#" class="dropdown-item"><i data-feather="trash" class="wd-16 mr-2"></i>Delete</a>
+										  </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card-body collapse show" id="beaufortWindScaleIcons">
+                              <div class="row no-gutters icons-list">
+                                 <div class="col-6 col-md-3"><i class="wi wi-wind-beaufort-1"></i>wi-wind-beaufort-1</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-wind-beaufort-2"></i>wi-wind-beaufort-2</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-wind-beaufort-3"></i>wi-wind-beaufort-3</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-wind-beaufort-4"></i>wi-wind-beaufort-4</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-wind-beaufort-5"></i>wi-wind-beaufort-5</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-wind-beaufort-6"></i>wi-wind-beaufort-6</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-wind-beaufort-7"></i>wi-wind-beaufort-7</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-wind-beaufort-8"></i>wi-wind-beaufort-8</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-wind-beaufort-9"></i>wi-wind-beaufort-9</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-wind-beaufort-10"></i>wi-wind-beaufort-10</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-wind-beaufort-11"></i>wi-wind-beaufort-11</div>
+                                 <div class="col-6 col-md-3"><i class="wi wi-wind-beaufort-12"></i>wi-wind-beaufort-12</div>
+                              </div>
+                           </div>
+                        </div>
+                        <!--/ Beaufort Wind Scale Icons End -->
+                     </div>
+                  </div>
+                  <!--/ Weather Icons End -->
                </div>
+               <!--/ Wrapper End -->
             </div>
             <!--/ Page Inner End -->
             <!--================================-->
@@ -827,8 +1087,8 @@
             <!--================================-->
             <footer class="page-footer">
                <div class="pd-t-4 pd-b-0 pd-x-20">
-                 <div class="tx-10 tx-uppercase tx-gray-500 tx-spacing-1">
-                     <p class="pd-y-10 mb-0">Copyright&copy; 2021 |  Created By  <a href="index.html" target="_blank">ISFAIN Corp.</a></p>
+                  <div class="tx-10 tx-uppercase tx-gray-500 tx-spacing-1">
+                     <p class="pd-y-10 mb-0">Copyright&copy; 2019 |  Created By  <a href="https://themeforest.net/user/colorlibcode/portfolio" target="_blank">ColorlibCode</a></p>
                   </div>
                </div>
             </footer>
@@ -937,7 +1197,22 @@
       </div>
       <!--/ Template Customizer End -->
       <!--================================-->
-
+      <!-- Footer Script -->
+      <!--================================-->
+      <script src="assets/plugins/jquery/jquery.min.js"></script>
+      <script src="assets/plugins/jquery-ui/jquery-ui.js"></script>
+      <script src="assets/plugins/popper/popper.js"></script>
+      <script src="assets/plugins/feather/feather.min.js"></script>
+      <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+      <script src="assets/plugins/typeahead/typeahead.js"></script>
+      <script src="assets/plugins/typeahead/typeahead-active.js"></script>
+      <script src="assets/plugins/pace/pace.min.js"></script>
+      <script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+      <script src="assets/plugins/highlight/highlight.min.js"></script>	
+      <!-- Required Script -->
+      <script src="assets/js/app.js"></script>
+      <script src="assets/js/avesta.js"></script>
+      <script src="assets/js/avesta-customizer.js"></script>
    </body>
 
 </html>
