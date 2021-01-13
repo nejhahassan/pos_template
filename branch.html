@@ -850,17 +850,14 @@
                                     <label class="form-control-label">Status: <span class="tx-danger">*</span></label>
                                     </div>
                                     <!-- col-4 -->
-                                    <div class="col-lg-2">
+                                    <div class="col-lg-4">
 
-                                       <div class="custom-control custom-radio">
-                                       <input type="radio" class="custom-control-input" id="statusOn" name="status" required>
-                                       <label class="custom-control-label" for="statusOn">On</label>
-                                       </div>
-                                       <div class="custom-control custom-radio mb-3">
-                                          <input type="radio" class="custom-control-input" id="statusOff" name="status" required>
-                                          <label class="custom-control-label" for="statusOff">Off</label>
-                                       </div>
-                                    </div>
+                                        <select class="form-control select2 select2-hidden-accessible" data-placeholder="status" tabindex="-1" aria-hidden="true">
+                                             <option label="Choose status"></option>
+                                             <option value="Active">Active</option>
+                                             <option value="Suspended">Suspended</option>
+                                             <option value="Disabled">Disabled</option>
+                                          </select>                                    </div>
                                  </div>
                                  <!-- row -->
                                  <div class="form-layout-footer">

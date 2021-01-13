@@ -692,7 +692,11 @@
             <!-- Page Inner Start -->
             <!--================================-->
             <div class="page-inner pd-0-force mg-0-force ht-100vh bg-white">
+
                <div class="row no-gutters wd-100p clearfix">
+               
+
+
                   <!--================================-->
                   <!-- Start Left sidebar -->
                   <!--================================-->
@@ -721,25 +725,65 @@
                   <!--================================-->				  
                   <!-- Start Right Sidebar -->
                   <!--================================-->
+
                   <div class="col-lg-9 email-right-sidebar">
-                     <div class="card mt-3 bd-r-0-force bd-t-0-force bd-b-0-force container">
-                        <h1>Shop Details</h1>
-                        <div class="card-body pd-0">
-                           <!-- All Right side bar data will goes here -->
-                           <div class="form-layout form-layout-1 container">
-                                 <div class="row mg-b-25 mt-4 ">
-                                    <div class="col-lg-4">
-                                       <div class="form-group">
-                                          <label class="form-control-label active">name: <span class="tx-danger">*</span></label>
-                                          <input class="form-control" type="text" name="name" placeholder="Enter branch name">
+               
+                     <div class="card bd-r-0-force bd-t-0-force bd-b-0-force container">
+
+                          <div class="card-body mt-1">
+                           <!-- Row start -->
+                           <div class="row">
+                              <div class="col-lg-8"><h1>Shop Positions</h1></div>
+                              <div class="col-lg-4 mt-3">
+                        <button style="float:right;" id="createFormButton" type="button" onclick="ShowForm()" class="btn btn-outline-primary">+ add new branch</button>
+                              </div>
+                           </div>
+                           <!-- Row end -->
+                           <div id="newBranchForm" class="col-md-12 col-lg-12 mt-3">
+                        <div class="card mg-b-30">
+                           <div class="card-header">
+                              <div class="d-flex justify-content-between align-items-center">
+                                 <div>
+                                    <h6 class="card-header-title tx-13 mb-0">Create new Branch</h6>
+                                 </div>
+                                 <div class="text-right">
+                                    <div class="d-flex">
+                                       <a href="#" class="mr-3"><i class="ti-reload"></i></a>
+                                       <div class="dropdown" data-toggle="dropdown">
+                                          <a href="#"><i class="ti-more-alt"></i></a>
+                                          <div class="dropdown-menu dropdown-menu-right">
+                                   <a href="#" class="dropdown-item"><i data-feather="info" class="wd-16 mr-2"></i>View Details</a>
+                                   <a href="#" class="dropdown-item"><i data-feather="share" class="wd-16 mr-2"></i>Share</a>
+                                   <a href="#" class="dropdown-item"><i data-feather="download" class="wd-16 mr-2"></i>Download</a>
+                                   <a href="#" class="dropdown-item"><i data-feather="copy" class="wd-16 mr-2"></i>Copy to</a>
+                                   <a href="#" class="dropdown-item"><i data-feather="folder" class="wd-16 mr-2"></i>Move to</a>
+                                   <a href="#" class="dropdown-item"><i data-feather="edit" class="wd-16 mr-2"></i>Rename</a>
+                                   <a href="#" class="dropdown-item"><i data-feather="trash" class="wd-16 mr-2"></i>Delete</a>
+                                </div>
                                        </div>
                                     </div>
-
-                                    <!-- col-4 -->
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card-body">
+                              <div class="form-layout form-layout-1">
+                                 <div class="row mg-b-25">
+                                    <div class="col-lg-12">
+                                       <div class="form-group mg-b-10-force">
+                                          <label class="form-control-label">Shop Id: <span class="tx-danger">*</span></label>
+                                          <select class="form-control select2 select2-hidden-accessible" data-placeholder="Choose country" tabindex="-1" aria-hidden="true">
+                                             <option label="Choose shop"></option>
+                                             <option value="Kababjees">Kababjees</option>
+                                             <option value="UB">United Bakery</option>
+                                             <option value="Delizia">Delizia</option>
+                                             <option value="Village">Village </option>
+                                          </select>
+                                       </div>
+                                    </div>
                                     <div class="col-lg-4">
                                        <div class="form-group">
-                                          <label class="form-control-label active">Owner Name: <span class="tx-danger">*</span></label>
-                                          <input class="form-control" type="text" name="owner_name"  placeholder="Enter email address">
+                                          <label class="form-control-label active">Branch name: <span class="tx-danger">*</span></label>
+                                          <input class="form-control" type="text" name="Branchname" placeholder="Enter branch name">
                                        </div>
                                     </div>
                                     <!-- col-4 -->
@@ -749,7 +793,6 @@
                                            <input type="text" class="form-control" id="phone-input-2">
                                        </div>
                                     </div>
-
                                     <!-- col-4 -->
                                     <div class="col-lg-4">
                                        <div class="form-group">
@@ -790,31 +833,18 @@
                                           </select>
                                        </div>
                                     </div>
-                                    <div class="col-lg-8">
-                                       <label class="form-control-label">Upload Logo: <span class="tx-danger">*</span></label>
-                                       <div class="input-group mb-3">
-                                       <div class="input-group-prepend">
-                                          <span class="input-group-text">Upload</span>
-                                       </div>
-                                       <div class="custom-file">
-                                          <input type="file" class="custom-file-input" id="inputGroupFile01">
-                                          <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-                                       </div>
-                                    </div>
-                                    </div>
                                     <div class="col-lg-12">
                                     <label class="form-control-label">Status: <span class="tx-danger">*</span></label>
                                     </div>
                                     <!-- col-4 -->
                                     <div class="col-lg-4">
 
-                                         <select class="form-control select2 select2-hidden-accessible" data-placeholder="status" tabindex="-1" aria-hidden="true">
+                                        <select class="form-control select2 select2-hidden-accessible" data-placeholder="status" tabindex="-1" aria-hidden="true">
                                              <option label="Choose status"></option>
                                              <option value="Active">Active</option>
                                              <option value="Suspended">Suspended</option>
                                              <option value="Disabled">Disabled</option>
-                                          </select>
-                                    </div>
+                                          </select>                                    </div>
                                  </div>
                                  <!-- row -->
                                  <div class="form-layout-footer">
@@ -824,6 +854,9 @@
                                  <!-- form-layout-footer -->
                               </div>
                            </div>
+                        </div>
+                     </div>
+                     
                         </div>
                      </div>
                   </div>
@@ -955,7 +988,38 @@
            'pattern': '+92 {{999}}-{{9999999}}',
            'persistent': true
       });
-         
+                  $(document).ready(function(){
+
+         $('#createFormButton').click(function(){
+         $('#newBranchForm').stop().slideToggle('slow');
+
+         });
+
+         });
+
+
+         var c = 0;
+         function ShowForm(){
+  
+         if (c == 0){
+
+            
+            // let obj = document.getElementById("newBranchForm");
+            // obj.style.display = 'block';
+            let btn = document.getElementById("createFormButton");
+            btn.innerText = "Hide Form";
+            c += 1;
+         }
+         else{
+            // let obj = document.getElementById("newBranchForm");
+            // obj.style.display = 'none';
+            let btn = document.getElementById("createFormButton");
+            btn.innerText = "+ add new branch";
+            c = 0;
+            
+         }
+
+         }
       </script>
 
    </body>
