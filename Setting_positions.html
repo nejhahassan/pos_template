@@ -737,16 +737,16 @@
                            <div class="row">
                               <div class="col-lg-8"><h1>Shop Positions</h1></div>
                               <div class="col-lg-4 mt-3">
-                        <button style="float:right;" id="createFormButton" type="button" onclick="ShowForm()" class="btn btn-outline-primary">+ add new branch</button>
+                        <button style="float:right;" id="createFormButton" type="button" onclick="ShowForm()" class="btn btn-outline-primary">+ add new position</button>
                               </div>
                            </div>
                            <!-- Row end -->
-                           <div id="newBranchForm" class="col-md-12 col-lg-12 mt-3">
+                           <div id="newBranchForm" style="display:none;" class="col-md-12 col-lg-12 mt-3">
                         <div class="card mg-b-30">
                            <div class="card-header">
                               <div class="d-flex justify-content-between align-items-center">
                                  <div>
-                                    <h6 class="card-header-title tx-13 mb-0">Create new Branch</h6>
+                                    <h6 class="card-header-title tx-13 mb-0">Create new position</h6>
                                  </div>
                                  <div class="text-right">
                                     <div class="d-flex">
@@ -1538,8 +1538,9 @@
            'pattern': '$ {{999}},{{999}},{{999}},{{999}}',
            'persistent': true
       });
-                  $(document).ready(function(){
-
+         
+      // Slide effect or create position
+         $(document).ready(function(){
          $('#createFormButton').click(function(){
          $('#newBranchForm').stop().slideToggle('slow');
 
@@ -1564,7 +1565,7 @@
             // let obj = document.getElementById("newBranchForm");
             // obj.style.display = 'none';
             let btn = document.getElementById("createFormButton");
-            btn.innerText = "+ add new branch";
+            btn.innerText = "+ add new position";
             c = 0;
             
          }
