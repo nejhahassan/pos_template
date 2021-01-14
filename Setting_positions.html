@@ -821,7 +821,7 @@
                                     </thead>
                                     <tbody>
                                        <tr>
-                                          <td>User</td>
+                                          <td>User &nbsp; <input type="checkbox" name="user_" id="user_" onclick="getValue('user_')"></td>
                                           <td><input type="checkbox" name="user_view"></td>
                                           <td><input type="checkbox" name="user_edit"></td>
                                           <td><input type="checkbox" name="user_update"></td>
@@ -830,7 +830,7 @@
 
                                        </tr>
                                        <tr>
-                                          <td>Branch</td>
+                                          <td>Branch &nbsp; <input type="checkbox" name="Branch_" id="Branch_" onclick="getValue('Branch_')"></td>
                                           <td><input type="checkbox" name="Branch_view"></td>
                                           <td><input type="checkbox" name="Branch_edit"></td>
                                           <td><input type="checkbox" name="Branch_update"></td>
@@ -1571,6 +1571,34 @@
             <!-- formatter Script -->  
       <script src="assets/plugins/formatter/jquery.formatter.min.js"></script>
       <script type="text/javascript">
+         // Select all checkbox
+
+         function getValue(startWith){
+
+         var eles = [];
+         var inputs = document.getElementsByTagName("input");
+         for(var i = 0; i < inputs.length; i++) {
+             if(inputs[i].name.indexOf(startWith) == 0) {
+                 eles.push(inputs[i]);
+             }
+         }
+         // console.log(document.getElementById(startWith).checked);
+         if(document.getElementById(startWith).checked == true){
+
+         for (var i = 1; i < eles.length; i++) {
+            eles[i].checked = true;
+         }         
+      }
+      else{
+         for (var i = 1; i < eles.length; i++) {
+            eles[i].checked = false;
+         }         
+      }
+}
+
+
+
+
                  // Phone formattor
       $('#phone-input-2').formatter({
            'pattern': '$ {{999}},{{999}},{{999}},{{999}}',
